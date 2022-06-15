@@ -1,0 +1,16 @@
+
+INSERT INTO users
+(id,password,nickName)
+VALUES
+("bob123","bob_pass","bob"),
+("alice123","alice_pass","Alice"),
+("oliver123","oliver_pass","Oliver"),
+("olivia123","olivia_pass","Olivia");
+
+INSERT INTO contacts
+(userId,contactId,name,server,last,lastdate) 
+VALUES
+("bob123","oliver123","oliver","oliver_server","oliverhi","olivertime"),
+("oliver123","bob123","bob","bob_server","hi1","yesterday1");
+("bob123","alice123","alice","alice_server","hi","yesterday"),
+("alice123","bob123","bob","bob_server","hi1","yesterday1");
