@@ -17,7 +17,7 @@ namespace ApiServer.Controllers;
 public class apiController : ControllerBase
 {
     private string serverPath = "https://localhost:7127";
-    private readonly UsersDBService usersDbService = new UsersDBService();
+    //private readonly UsersDBService usersDbService = new UsersDBService();
     private readonly Users1DBService users1DbService = new Users1DBService();
     private readonly IHubContext<DataBaseHub,IDataBaseClient> _messageHub;
     public apiController(IHubContext<DataBaseHub, IDataBaseClient> messageHub)
@@ -68,7 +68,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        if (!usersDbService.Login(bodyRequest.id,bodyRequest.password)){
+        if (!users1DbService.Login(bodyRequest.id,bodyRequest.password)){
             return BadRequest();
         }
         return Ok();
@@ -116,7 +116,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        Contact1? output = users1DbService.GetOneContact(loggedUserId, id);
+        var output = users1DbService.GetOneContact(loggedUserId, id);
         if (output == null)
         {
             return NotFound();
@@ -130,7 +130,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        if (!usersDbService.UpdateContactNameServer(loggedUserId,id,input.name,input.server))
+        if (!users1DbService.UpdateContactNameServer(loggedUserId,id,input.name,input.server))
         {
             return NotFound();
         }
@@ -144,7 +144,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        if (!usersDbService.DeleteContact(loggedUserId,id))
+        if (!users1DbService.DeleteContact(loggedUserId,id))
         {
             return NotFound();
         }
@@ -159,7 +159,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        var output = usersDbService.GetMessages(loggedUserId,id);
+        var output = users1DbService.GetMessages(loggedUserId,id);
         if (output == null)
         {
             return NotFound();
@@ -173,8 +173,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        var output = usersDbService.GetMessages(loggedUserId,id);
-        var newMsgObj = usersDbService.AddMessage(loggedUserId, id, input.content);
+        var newMsgObj = users1DbService.AddMessage(loggedUserId, id, input.content,true);
         if (newMsgObj == null)
         {
             return NotFound();
@@ -192,7 +191,7 @@ public class apiController : ControllerBase
             return BadRequest();
         }
 
-        var output = usersDbService.GetMessageById(loggedUserId, id, msgId);
+        var output = users1DbService.GetMessageById(loggedUserId, id, msgId);
         if (output == null)
         {
             return NotFound();
@@ -208,7 +207,7 @@ public class apiController : ControllerBase
             return BadRequest();
         }
         string content = requestBody.content;
-        if (!usersDbService.UpdateMessageContentById(loggedUserId,id,msgId,content))
+        if (!users1DbService.UpdateMessageContentById(loggedUserId,id,msgId,content))
         {
             return NotFound();
         }
@@ -223,7 +222,7 @@ public class apiController : ControllerBase
         {
             return BadRequest();
         }
-        if (!usersDbService.DeleteMessageById(loggedUserId,id,msgId))
+        if (!users1DbService.DeleteMessageById(loggedUserId,id,msgId))
         {
             return NotFound();
         }
@@ -254,7 +253,7 @@ public class apiController : ControllerBase
         //post message - content
         var postInput = new MessageInput();
         postInput.content = input.content;
-        var msgObj = usersDbService.AddMessage(input.to, input.from, input.content, false);
+        var msgObj = users1DbService.AddMessage(input.to, input.from, input.content, false);
         if (msgObj == null)
         {
             return BadRequest();

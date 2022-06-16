@@ -17,10 +17,13 @@ namespace ApiServer.Context
             // Configuring the Name property as the primary
             // key of the Users table
             modelBuilder.Entity<User1>().HasKey(e => e.id);
-            modelBuilder.Entity<Contact1>().HasNoKey();
-        }
+            modelBuilder.Entity<Contact1>().HasKey(e=>new {e.userId,e.contactId});
+            modelBuilder.Entity<Message1>().HasKey(e => new { e.user1Id, e.user2Id, e.msgId});
 
+        }
+        
         public DbSet<User1> Users { get; set; }
         public DbSet<Contact1> Contacts { get; set; }
+        public DbSet<Message1> Messages { get; set; }
     }
 }

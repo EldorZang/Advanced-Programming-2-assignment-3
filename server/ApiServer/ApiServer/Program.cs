@@ -9,7 +9,6 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddSingleton<IUsersDBService, UsersDBService>();
 builder.Services.AddSingleton<IUsers1DBService, Users1DBService>();
 builder.Services.AddCors(options =>
 {

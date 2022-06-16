@@ -1,4 +1,7 @@
 ﻿using ApiServer.Context;
+using ApiServer.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace ApiServer.Services
 {
     public interface IUsers1DBService
@@ -6,27 +9,64 @@ namespace ApiServer.Services
         public bool Login(string id, string password);
         public bool IsUserExists(string id);
         public string? GetNickName(string id);
-        public Contact1? AddContact(string loggedUserID, string newContact, string newName, string server);
-        public Contact1? GetOneContact(string loggedUserID, string contactID);
+        public OutputContact? AddContact(string loggedUserID, string newContact, string newName, string server);
+        public OutputContact? GetOneContact(string loggedUserID, string contactID);
         public bool UpdateContactNameServer(string loggedUser, string contactId, string newName, string newServer);
         public bool DeleteContact(string loggedUser, string contactId);
-        public Message[]? GetMessages(string user1, string user2);
-        public Message? AddMessage(string user1, string user2, string content);
-        public Message? AddMessage(string user1, string user2, string content, bool sent);
-        public Message? GetMessageById(string loggedUser, string user2, int msgId);
+        public List<OutputMessage>? GetMessages(string user1, string user2);
+        public OutputMessage? AddMessage(string user1, string user2, string content, bool sent);
+        public OutputMessage? GetMessageById(string loggedUser, string user2, int msgId);
         public bool UpdateMessageContentById(string loggedUser, string user2, int msgId, string newContent);
         public bool DeleteMessageById(string loggedUser, string user2, int msgId);
 
     }
     public class Users1DBService : IUsers1DBService
     {
-        private static UsersDb db = new UsersDb();
-        public List<User> GetUsers()
+        public void UpdateLastMsg(string user1, string user2)
         {
-            return db.getUsers();
-        }
+            using (var db = new UsersContext())
+            {
+                var contact = db.Contacts.Find(user1, user2);
+                if (contact == null)
+                {
+                    return;
+                }
+                var msg = db.Messages.Where(e => e.user1Id == user1 && e.user2Id == user2);
+                if (!msg.Any())
+                {
+                    if (contact.lastdate != null || contact.last != null)
+                    {
+                        contact.lastdate = null;
+                        contact.last = null;
+                        db.Entry(contact).State = EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                    return;
+                }
+                var recentMsg = msg.OrderByDescending(e => e.msgId).FirstOrDefault(); ;
+                contact.lastdate = recentMsg.created;
+                contact.last = recentMsg.content;
+                db.Entry(contact).State = EntityState.Modified;
+                db.SaveChanges();
 
-        public List<Contact1>? GetAllContacts(string currUserID)
+            }
+        }
+            public OutputContact? CastContactToOutputContact(Contact1? contact) {
+            if (contact == null)
+            {
+                return null;
+            }
+            return new OutputContact(contact.contactId, contact.name, contact.server, contact.last, contact.lastdate);
+        }
+        public OutputMessage? CastMessageToOutputMessage(Message1? msg)
+        {
+            if (msg == null)
+            {
+                return null;
+            }
+            return new OutputMessage(msg.content,msg.msgId,msg.sent,msg.created);
+        }
+        public List<OutputContact>? GetAllContacts(string currUserID)
         {
             using (var db = new UsersContext())
             {
@@ -34,12 +74,20 @@ namespace ApiServer.Services
                 {
                     return null;
                 }
-                var contacts = db.Contacts.Where(e => e.userId == currUserID).ToList();
-                return contacts;
+                var contactsQuery = db.Contacts.Where(e => e.userId == currUserID);
+                var outputList = new List<OutputContact>();
+                foreach (Contact1 contact in contactsQuery)
+                {
+                    var newContact = CastContactToOutputContact(contact);
+                    if (newContact != null) {
+                        outputList.Add(newContact);
+                    }
+                }
+                return outputList;
             }
         }
 
-        public Contact1? AddContact(string loggedUserID, string newContact, string newName, string server)
+        public OutputContact? AddContact(string loggedUserID, string newContact, string newName, string server)
         {
             using (var db = new UsersContext())
             {
@@ -47,14 +95,14 @@ namespace ApiServer.Services
                 {
                     return null;
                 }
-                if (db.Contacts.Where(e=>e.userId == loggedUserID && e.contactId==newContact) != null)
+                if (db.Contacts.Find(loggedUserID,newContact) != null)
                 {
                     return null;
                 }
                 var addedContact = new Contact1(loggedUserID, newContact, newName, server);
                 db.Contacts.Add(addedContact);
                 db.SaveChanges();
-                return addedContact;
+                return CastContactToOutputContact(addedContact);
             }
         }
 
@@ -62,7 +110,7 @@ namespace ApiServer.Services
         {
             using (var db = new UsersContext())
             {
-                if (db.Users.Find(id) == null)
+                if (db.Users.Find(id) != null)
                 {
                     return false;
                 }
@@ -72,7 +120,7 @@ namespace ApiServer.Services
                 return true;
             }
         }
-        public Contact1? GetOneContact(string loggedUserID, string contactID)
+        public OutputContact? GetOneContact(string loggedUserID, string contactID)
         {
             using (var db = new UsersContext())
             {
@@ -80,88 +128,141 @@ namespace ApiServer.Services
                 {
                     return null;
                 }
-                var contact = db.Contacts.Where(e => e.userId == loggedUserID && e.contactId == contactID);
+                var contact = db.Contacts.FirstOrDefault(e => e.userId == loggedUserID && e.contactId == contactID);
                 if (contact  == null)
                 {
                     return null;
                 }
-                return contact.ElementAt(0);
+                return CastContactToOutputContact(contact);
             }
         }
         public bool UpdateContactNameServer(string loggedUser, string contactId, string newName, string newServer)
         {
-            User? user = db.getUsers().Find(element => element.id == loggedUser);
-            if (user == null) return false;
-            Contact? contact = user.contacts.Find(element => element.id == contactId);
-            if (contact == null) return false;
-            contact.name = newName;
-            contact.server = newServer;
-            return true;
+            using (var db = new UsersContext())
+            {
+                if (db.Users.Find(loggedUser) == null)
+                {
+                    return false;
+                }
+                var contact = db.Contacts.Find(loggedUser, contactId);
 
+                if (contact == null)
+                {
+                    return false;
+                }
+                contact.name = newName;
+                contact.server = newServer;
+                db.Entry(contact).State = EntityState.Modified;
+                db.SaveChanges();
+                return true;
+            }
         }
         public bool DeleteContact(string loggedUser, string contactId)
         {
-            var user = db.getUsers().Find(element => element.id == loggedUser);
-            if (user == null) return false;
-            var contact = user.contacts.Find(element => element.id == contactId);
-            var userMsgs = user.userMessages.Find(e => e.userId == contactId);
-            if (contact == null || userMsgs == null) return false;
-            user.contacts.Remove(contact);
-            user.userMessages.Remove(userMsgs);
-            return true;
+            using (var db = new UsersContext())
+            {
+                if (db.Users.Find(loggedUser) == null)
+                {
+                    return false;
+                }
+                var contact = db.Contacts.FirstOrDefault(e => e.userId == loggedUser && e.contactId == contactId);
+                if (contact  == null)
+                {
+                    return false;
+                }
+                var msgs = db.Messages.Where(e=>e.user1Id==loggedUser && e.user2Id==contactId);
+                foreach(var msg in msgs)
+                {
+                    db.Messages.Remove(msg);
+
+                }
+                db.Contacts.Remove(contact);
+                db.SaveChanges();
+                return true;
+            }
         }
         // by using user1 prespective
-        public Message[]? GetMessages(string user1, string user2)
+        public List<OutputMessage>? GetMessages(string user1, string user2)
         {
-            User? user = db.getUsers().Find(element => element.id == user1);
-            if (user == null) return null;
-            var user2Messages = user.userMessages.Find(e => e.userId == user2);
-            if (user2Messages == null) return null;
-            return user2Messages.messages.ToArray();
+
+            using (var db = new UsersContext())
+            {
+                if (db.Contacts.Find(user1,user2) == null)
+                {
+                    return null;
+                }
+                var output = new List<OutputMessage>();
+                var messagesQuery = db.Messages.Where(e => e.user1Id == user1 && e.user2Id == user2).OrderBy(e => e.msgId);
+                foreach(Message1 msg in messagesQuery)
+                {
+                    var castedMsg = CastMessageToOutputMessage(msg);
+                    if (castedMsg != null) {
+                        output.Add(castedMsg);
+                    }
+                }
+                return output;
+            }
         }
         // by using user1 prespective
-        public Message? AddMessage(string user1, string user2, string content)
+        public OutputMessage? AddMessage(string user1, string user2, string content, bool sent)
         {
-            User? user = db.getUsers().Find(element => element.id == user1);
-            if (user == null) return null;
-            var user2Messages = user.userMessages.Find(e => e.userId == user2);
-            if (user2Messages == null) return null;
-            var output = user2Messages.AddMessage(content, true);
-            return output;
-        }
-        // by using user1 prespective
-        public Message? AddMessage(string user1, string user2, string content, bool sent)
-        {
-            User? user = db.getUsers().Find(element => element.id == user1);
-            if (user == null) return null;
-            var user2Messages = user.userMessages.Find(e => e.userId == user2);
-            if (user2Messages == null) return null;
-            var output = user2Messages.AddMessage(content, sent);
-            return output;
+            using (var db = new UsersContext())
+            {
+                if (db.Contacts.Find(user1, user2) == null)
+                {
+                    return null;
+                }
+                var newMsgId = 1;
+                var currMessagesQuery = db.Messages.Where(e => e.user1Id == user1 && e.user2Id == user2);
+                if (currMessagesQuery.Any())
+                {
+                    newMsgId = currMessagesQuery.Max(e => e.msgId) + 1;
+                }
+                var newMsg = new Message1(user1, user2, content, newMsgId, sent);
+                db.Messages.Add(newMsg);
+                db.SaveChanges();
+                UpdateLastMsg(user1, user2);
+                return CastMessageToOutputMessage(newMsg);
+            }
         }
 
-        public Message? GetMessageById(string loggedUser, string user2, int msgId)
+        public OutputMessage? GetMessageById(string loggedUser, string user2, int msgId)
         {
-            User? user = db.getUsers().Find(element => element.id == loggedUser);
-            if (user == null) return null;
-            var user2Messages = user.userMessages.Find(e => e.userId == user2);
-            if (user2Messages == null) return null;
-            return user2Messages.GetMessage(msgId);
+            using (var db = new UsersContext())
+            {
+                return CastMessageToOutputMessage(db.Messages.Find(loggedUser,user2,msgId));
+            }
         }
         public bool UpdateMessageContentById(string loggedUser, string user2, int msgId, string newContent)
         {
-            var msg = GetMessageById(loggedUser, user2, msgId);
-            if (msg == null) return false;
-            msg.content = newContent;
-            return true;
+            using (var db = new UsersContext())
+            {
+                var msg = db.Messages.Find(loggedUser, user2, msgId);
+                if (msg == null)
+                {
+                    return false;
+                }
+                msg.content = newContent;
+                db.Entry(msg).State = EntityState.Modified;
+                db.SaveChanges();
+                UpdateLastMsg(loggedUser, user2);
+                return true;
+            }
         }
         public bool DeleteMessageById(string loggedUser, string user2, int msgId)
         {
-            User? user = db.getUsers().Find(element => element.id == loggedUser);
-            if (user == null) return false;
-            var user2Messages = user.userMessages.Find(e => e.userId == user2);
-            if (user2Messages == null) return false;
-            return user2Messages.DeleteMessage(msgId);
+            using (var db = new UsersContext())
+            {
+                var msg = db.Messages.Find(loggedUser, user2, msgId);
+                if (msg == null)
+                {
+                    return false;
+                }
+                db.Messages.Remove(msg);
+                db.SaveChanges();
+                UpdateLastMsg(loggedUser, user2);
+                return true;
+            }
         }
         public bool IsUserExists(string id)
         {

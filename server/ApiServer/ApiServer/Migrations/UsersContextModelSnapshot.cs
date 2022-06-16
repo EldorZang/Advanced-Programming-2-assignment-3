@@ -20,8 +20,11 @@ namespace ApiServer.Migrations
 
             modelBuilder.Entity("ApiServer.Contact1", b =>
                 {
+                    b.Property<string>("userId")
+                        .HasColumnType("varchar(255)");
+
                     b.Property<string>("contactId")
-                        .HasColumnType("longtext");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("last")
                         .HasColumnType("longtext");
@@ -35,10 +38,36 @@ namespace ApiServer.Migrations
                     b.Property<string>("server")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("userId")
-                        .HasColumnType("longtext");
+                    b.HasKey("userId", "contactId");
 
                     b.ToTable("Contacts");
+                });
+
+            modelBuilder.Entity("ApiServer.Message1", b =>
+                {
+                    b.Property<string>("user1Id")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("user2Id")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<int>("msgId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("content")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("created")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<bool>("sent")
+                        .HasColumnType("tinyint(1)");
+
+                    b.HasKey("user1Id", "user2Id", "msgId");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("ApiServer.User1", b =>

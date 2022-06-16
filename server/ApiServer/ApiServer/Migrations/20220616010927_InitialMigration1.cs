@@ -4,7 +4,7 @@
 
 namespace ApiServer.Migrations
 {
-    public partial class InitialMigration3 : Migration
+    public partial class InitialMigration1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,9 +15,9 @@ namespace ApiServer.Migrations
                 name: "Contacts",
                 columns: table => new
                 {
-                    userId = table.Column<string>(type: "longtext", nullable: true)
+                    userId = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    contactId = table.Column<string>(type: "longtext", nullable: true)
+                    contactId = table.Column<string>(type: "varchar(255)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     name = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
@@ -30,6 +30,28 @@ namespace ApiServer.Migrations
                 },
                 constraints: table =>
                 {
+                    table.PrimaryKey("PK_Contacts", x => new { x.userId, x.contactId });
+                })
+                .Annotation("MySql:CharSet", "utf8mb4");
+
+            migrationBuilder.CreateTable(
+                name: "Messages",
+                columns: table => new
+                {
+                    user1Id = table.Column<string>(type: "varchar(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    user2Id = table.Column<string>(type: "varchar(255)", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    msgId = table.Column<int>(type: "int", nullable: false),
+                    content = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    created = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    sent = table.Column<bool>(type: "tinyint(1)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Messages", x => new { x.user1Id, x.user2Id, x.msgId });
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
@@ -55,6 +77,9 @@ namespace ApiServer.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Contacts");
+
+            migrationBuilder.DropTable(
+                name: "Messages");
 
             migrationBuilder.DropTable(
                 name: "Users");
