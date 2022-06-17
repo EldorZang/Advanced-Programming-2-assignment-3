@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.332" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.332" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.332" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/layout/settings_activity.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/layout/toolbar_layout.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/menu/image_select_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/TestApp/app/src/main/res/xml/root_preferences.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

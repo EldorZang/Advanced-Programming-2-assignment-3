@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 public class MainActivity extends AppCompatActivity {
     // private ActivityMainBinding binding;
     // private AppDB appDB;
@@ -59,7 +61,22 @@ public class MainActivity extends AppCompatActivity {
             Intent i = new Intent(this, RegisterActivity.class);
             startActivity(i);
         });
+
+        FloatingActionButton fab_settings = findViewById(R.id.fab_settings);
+        fab_settings.setOnClickListener(view -> {
+            Intent i = new Intent(this, SettingsActivity.class);
+            startActivity(i);
+        });
+
     }
+
+    /*
+    @Override
+    public boolean onSupportNavigateUp() {
+        NavController navController = Navigation.findNavController(this, R.id.main_nav_fragment);
+        return navController.navigateUp() || super.onSupportNavigateUp();
+    }
+     */
 
     public void connectUser() {
         // login information is valid, login the user

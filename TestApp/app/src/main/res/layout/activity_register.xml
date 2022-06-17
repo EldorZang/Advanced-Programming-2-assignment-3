@@ -142,7 +142,7 @@
     <ImageButton
         android:id="@+id/userImage"
         android:layout_width="155dp"
-        android:layout_height="157dp"
+        android:layout_height="155dp"
         android:contentDescription="@string/optional_image_input"
         android:scaleType="fitXY"
         android:src="@drawable/userdef"
