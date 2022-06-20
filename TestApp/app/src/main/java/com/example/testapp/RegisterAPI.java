@@ -1,5 +1,9 @@
 package com.example.testapp;
 
+import android.content.SharedPreferences;
+
+import androidx.preference.PreferenceManager;
+
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -11,10 +15,12 @@ public class RegisterAPI {
     public Retrofit retrofit;
     public WebServiceAPI webServiceAPI;
     public boolean responseResult;
+    public SharedPreferences sharedPreferences;
 
     public RegisterAPI() {
+        sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MyApp.context);
         retrofit = new Retrofit.Builder()
-                .baseUrl(MyApp.context.getString(R.string.BaseUrl))
+                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         webServiceAPI = retrofit.create(WebServiceAPI.class);
@@ -22,11 +28,15 @@ public class RegisterAPI {
 
     public boolean registerCheckUser(String id) {
         this.responseResult = false;
+        retrofit = new Retrofit.Builder()
+                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
         Call<ResponseBody> checkRegisterCall = webServiceAPI.checkNewUser(id);
         checkRegisterCall.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                setResponseResult(response.code() == 200);
+                setResponseResult(response.isSuccessful());
             }
 
             @Override
@@ -39,11 +49,15 @@ public class RegisterAPI {
 
     public boolean registerUser(RegisterInput registerInput) {
         this.responseResult = false;
+        retrofit = new Retrofit.Builder()
+                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
         Call<ResponseBody> registerCall = webServiceAPI.registerNewUser(registerInput);
         registerCall.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-                setResponseResult(response.code() != 200);
+                setResponseResult(response.isSuccessful());
             }
 
             @Override
