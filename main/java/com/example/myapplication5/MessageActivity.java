@@ -9,8 +9,11 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
+import androidx.sqlite.db.SimpleSQLiteQuery;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -20,7 +23,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MessageActivity extends AppCompatActivity {
 
-
+    AppDB db;
     ArrayList<Message> messageList;
     ListView listView;
     MessageListAdapter adapter;
@@ -39,24 +42,13 @@ public class MessageActivity extends AppCompatActivity {
         sendButton = (Button) findViewById(R.id.submit_form);
         messageList = new ArrayList<Message>();
         // Http get to get all contacts.
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5067")
-                .addConverterFactory(GsonConverterFactory.create())
+        db = Room.databaseBuilder(getApplicationContext(),
+                        AppDB.class, "ContactsDB")
+                .allowMainThreadQueries()
                 .build();
-        ContactsAPI service = retrofit.create(ContactsAPI.class);
-        Call<ArrayList<Message>> call = service.getMessages(contactId,loggedUserId);
-        call.enqueue(new Callback<ArrayList<Message>>() {
-            @Override
-            public void onResponse(Call<ArrayList<Message>> call, Response<ArrayList<Message>> response) {
-                messageList = response.body();
-                UpdateList();
-            }
 
-            @Override
-            public void onFailure(Call<ArrayList<Message>> call, Throwable t) {
-                messageList = new ArrayList<Message>();
-            }
-        });
+        List<Message> queryResult = db.messagesDao().getConversion(loggedUserId,contactId);
+        messageList.addAll(queryResult);
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,7 +63,7 @@ public class MessageActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<SendMessageObj> call, Response<SendMessageObj> response) {
                         msgText.setText("");
-                        UpdateList();
+                        UpdateData();
                     }
 
                     @Override
@@ -82,8 +74,36 @@ public class MessageActivity extends AppCompatActivity {
     });
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        UpdateData();
+    }
 
+    private void UpdateData(){
+    Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl("http://10.0.2.2:5067")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build();
+    ContactsAPI service = retrofit.create(ContactsAPI.class);
+    Call<ArrayList<Message>> call = service.getMessages(contactId,loggedUserId);
+    call.enqueue(new Callback<ArrayList<Message>>() {
+        @Override
+        public void onResponse(Call<ArrayList<Message>> call, Response<ArrayList<Message>> response) {
+            messageList = response.body();
+            UpdateList();
+        }
+
+        @Override
+        public void onFailure(Call<ArrayList<Message>> call, Throwable t) {
+            messageList = new ArrayList<Message>();
+        }
+    });
+}
     private void UpdateList() {
+        db.messagesDao().deleteConversation(loggedUserId,contactId);
+        db.messagesDao().vacuumDb(new SimpleSQLiteQuery("VACUUM"));
+        db.messagesDao().insertAll(messageList);
         listView = findViewById(R.id.list_view);
         adapter = new MessageListAdapter(getApplicationContext(), messageList);
         listView.setAdapter(adapter);

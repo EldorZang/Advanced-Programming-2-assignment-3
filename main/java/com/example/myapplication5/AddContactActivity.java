@@ -18,6 +18,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class AddContactActivity extends AppCompatActivity{
+    String loggedUserId;
     Button submitButton;
     TextView errorMsg;
     EditText idField ;
@@ -28,7 +29,9 @@ public class AddContactActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add_contact_activity);
-         submitButton = findViewById(R.id.submit_form);
+        Intent activityIntent = getIntent();
+        loggedUserId = activityIntent.getStringExtra("loggedUserId");
+        submitButton = findViewById(R.id.submit_form);
          idField = (EditText) findViewById(R.id.contact_id_form);
          nickNameField = (EditText) findViewById(R.id.contact_nickName_form);
          serverField = (EditText) findViewById(R.id.contact_server_form);
@@ -38,7 +41,7 @@ public class AddContactActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 Contact contact = new Contact(idField.getText().toString(),nickNameField.getText().toString(),serverField.getText().toString(),null,null);
-                AddContactObject addContactObj = new AddContactObject("alice123",idField.getText().toString(),"http://10.0.2.2:5067");
+                AddContactObject addContactObj = new AddContactObject(loggedUserId,idField.getText().toString(),"http://10.0.2.2:5067");
                 Retrofit retrofit = new Retrofit.Builder()
                         .baseUrl("http://10.0.2.2:5067")
                         .addConverterFactory(GsonConverterFactory.create())
@@ -59,7 +62,7 @@ public class AddContactActivity extends AppCompatActivity{
                         errorMsg.setVisibility(View.VISIBLE);
                     }
                 });
-                Call<Contact> call = service.AddContact("alice123",contact);
+                Call<Contact> call = service.AddContact(loggedUserId,contact);
                 call.enqueue(new Callback<Contact>() {
                     @Override
                     public void onResponse(Call<Contact> call, Response<Contact> response) {

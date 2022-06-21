@@ -1,12 +1,25 @@
 package com.example.myapplication5;
+import androidx.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity
 public class Contact {
+    @PrimaryKey
+    @NonNull
     private String id;
+    @ColumnInfo(name = "name")
     private String name;
+    @ColumnInfo(name = "server")
     private String server;
+    @ColumnInfo(name = "last")
     private String last;
+    @ColumnInfo(name = "lastdate")
     private String lastdate;
+    @ColumnInfo(name = "lastMassageSendingTime")
     private String lastMassageSendingTime;
+    @ColumnInfo(name = "pictureId")
     private int pictureId = -1;
     public Contact(String id, String name, String server,String lastdate,String last) {
         this.id = id;
