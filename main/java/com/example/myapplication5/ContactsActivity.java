@@ -61,12 +61,10 @@ String loggedUserId;
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(getApplicationContext(), UserActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MessageActivity.class);
 
-                intent.putExtra("userName", contactList.get(i).getName());
-                intent.putExtra("profilePicture", contactList.get(i).getPictureId());
-                intent.putExtra("lastMassage", contactList.get(i).getLast());
-                intent.putExtra("time", contactList.get(i).getLastdate());
+                intent.putExtra("loggedUserId", loggedUserId);
+                intent.putExtra("contactId", contactList.get(i).getId());
                 startActivity(intent);
             }
         });
