@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Custom Widgets</string>
+    <string name="show_contact_button_text">Show Contacts</string>
+</resources>
