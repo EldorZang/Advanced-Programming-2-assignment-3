@@ -20,7 +20,7 @@ public class LoginAPI {
     public LoginAPI() {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MyApp.context);
         retrofit = new Retrofit.Builder()
-                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .baseUrl(validateUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl))))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         webServiceAPI = retrofit.create(WebServiceAPI.class);
@@ -29,7 +29,7 @@ public class LoginAPI {
     public boolean loginUser(LoginInput loginInput) {
         this.responseResult = false;
         retrofit = new Retrofit.Builder()
-                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .baseUrl(validateUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl))))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         Call<ResponseBody> loginCall = webServiceAPI.loginUser(loginInput);
@@ -49,5 +49,12 @@ public class LoginAPI {
 
     public void setResponseResult(boolean result) {
         this.responseResult = result;
+    }
+
+    public String validateUrl(String baseUrl) {
+        if (!baseUrl.endsWith("/")) {
+            baseUrl += "/";
+        }
+        return baseUrl;
     }
 }

@@ -20,7 +20,7 @@ public class RegisterAPI {
     public RegisterAPI() {
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MyApp.context);
         retrofit = new Retrofit.Builder()
-                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .baseUrl(validateUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl))))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         webServiceAPI = retrofit.create(WebServiceAPI.class);
@@ -29,7 +29,7 @@ public class RegisterAPI {
     public boolean registerCheckUser(String id) {
         this.responseResult = false;
         retrofit = new Retrofit.Builder()
-                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .baseUrl(validateUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl))))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         Call<ResponseBody> checkRegisterCall = webServiceAPI.checkNewUser(id);
@@ -50,7 +50,7 @@ public class RegisterAPI {
     public boolean registerUser(RegisterInput registerInput) {
         this.responseResult = false;
         retrofit = new Retrofit.Builder()
-                .baseUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl)))
+                .baseUrl(validateUrl(sharedPreferences.getString("server_link", MyApp.context.getString(R.string.BaseUrl))))
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         Call<ResponseBody> registerCall = webServiceAPI.registerNewUser(registerInput);
@@ -70,5 +70,12 @@ public class RegisterAPI {
 
     public void setResponseResult(boolean result) {
         this.responseResult = result;
+    }
+
+    public String validateUrl(String baseUrl) {
+        if (!baseUrl.endsWith("/")) {
+            baseUrl += "/";
+        }
+        return baseUrl;
     }
 }
