@@ -1,6 +1,7 @@
 package com.example.myapplication5;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.room.Room;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +39,11 @@ public class CustomListAdapter extends ArrayAdapter<Contact> {
         TextView userName = convertView.findViewById(R.id.user_name);
         TextView lastMsg = convertView.findViewById(R.id.last_massage);
         TextView time = convertView.findViewById(R.id.time);
-
-        imageView.setImageResource(contact.getPictureId());
+        if(contact.getPictureId() == null){
+            imageView.setImageResource(R.drawable.userdef);
+        }else{
+            imageView.setImageURI(Uri.parse(contact.getPictureId()));
+        }
         userName.setText(contact.getName());
         lastMsg.setText(contact.getLast());
         time.setText(contact.getLastdate());

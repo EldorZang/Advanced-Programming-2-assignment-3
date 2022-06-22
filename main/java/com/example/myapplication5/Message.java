@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 
-@Entity(primaryKeys = {"baseUser","contactName"})
+@Entity(primaryKeys = {"baseUser","contactName","id"})
 public class Message {
     @NonNull
     @ColumnInfo(name = "baseUser")

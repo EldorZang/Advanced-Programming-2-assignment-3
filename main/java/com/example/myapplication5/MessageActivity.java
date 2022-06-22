@@ -1,14 +1,19 @@
 package com.example.myapplication5;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.preference.PreferenceManager;
 import androidx.room.Room;
 import androidx.sqlite.db.SimpleSQLiteQuery;
 
@@ -31,6 +36,7 @@ public class MessageActivity extends AppCompatActivity {
     String contactId;
     EditText msgText;
     Button sendButton;
+    ImageView profilePic;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,21 +46,30 @@ public class MessageActivity extends AppCompatActivity {
         contactId = activityIntent.getStringExtra("contactId");
         msgText = (EditText) findViewById(R.id.message_form);
         sendButton = (Button) findViewById(R.id.submit_form);
+        profilePic = (ImageView)  findViewById(R.id.top_bar_image);
         messageList = new ArrayList<Message>();
-        // Http get to get all contacts.
+
         db = Room.databaseBuilder(getApplicationContext(),
                         AppDB.class, "ContactsDB")
                 .allowMainThreadQueries()
                 .build();
-
+        try {
+            List<UserPicture> userPicture = db.UserPictureDao().getUserPicture(contactId);
+            if (userPicture.size() != 0) {
+                profilePic.setImageURI(Uri.parse(userPicture.get(0).getPath()));
+            }
+        }catch(Exception e){
+            System.out.print(e.getMessage());
+        }
         List<Message> queryResult = db.messagesDao().getConversion(loggedUserId,contactId);
         messageList.addAll(queryResult);
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MessagingApp.getAppContext());
                 SendMessageObj newMsj = new SendMessageObj(msgText.getText().toString());
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://10.0.2.2:5067")
+                        .baseUrl(validateUrl(sharedPreferences.getString("server_link", MessagingApp.getAppContext().getString(R.string.BaseUrl))))
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
                 ContactsAPI service = retrofit.create(ContactsAPI.class);
@@ -81,8 +96,9 @@ public class MessageActivity extends AppCompatActivity {
     }
 
     private void UpdateData(){
-    Retrofit retrofit = new Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:5067")
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MessagingApp.getAppContext());
+        Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl(validateUrl(sharedPreferences.getString("server_link", MessagingApp.getAppContext().getString(R.string.BaseUrl))))
             .addConverterFactory(GsonConverterFactory.create())
             .build();
     ContactsAPI service = retrofit.create(ContactsAPI.class);
@@ -100,13 +116,27 @@ public class MessageActivity extends AppCompatActivity {
         }
     });
 }
-    private void UpdateList() {
+    @Override
+    protected void onStop(){
+        super.onStop();
         db.messagesDao().deleteConversation(loggedUserId,contactId);
         db.messagesDao().vacuumDb(new SimpleSQLiteQuery("VACUUM"));
-        db.messagesDao().insertAll(messageList);
+        for(int i =0;i<messageList.size();i++){
+            messageList.get(i).setBaseUser(loggedUserId);
+            messageList.get(i).setContactName(contactId);
+        }
+        db.messagesDao().insertAll((List<Message>)messageList);
+    }
+    private void UpdateList() {
         listView = findViewById(R.id.list_view);
         adapter = new MessageListAdapter(getApplicationContext(), messageList);
         listView.setAdapter(adapter);
        // listView.setClickable(true);
+    }
+    public String validateUrl(String baseUrl) {
+        if (!baseUrl.endsWith("/")) {
+            baseUrl += "/";
+        }
+        return baseUrl;
     }
 }

@@ -1,4 +1,6 @@
 package com.example.myapplication5;
+import android.net.Uri;
+
 import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
@@ -19,14 +21,24 @@ public class Contact {
     private String lastdate;
     @ColumnInfo(name = "lastMassageSendingTime")
     private String lastMassageSendingTime;
-    @ColumnInfo(name = "pictureId")
-    private int pictureId = -1;
+
+    private String pictureId = null;
+    public String getPictureId() {
+        return pictureId;
+    }
+
+    public void setPictureId(String pictureId) {
+        this.pictureId = pictureId;
+    }
+
+
     public Contact(String id, String name, String server,String lastdate,String last) {
         this.id = id;
         this.name = name;
         this.server = server;
         this.lastdate = lastdate;
         this.last = last;
+        pictureId = null;
     }
 
     public String getId() {
@@ -53,9 +65,7 @@ public class Contact {
         return lastMassageSendingTime;
     }
 
-    public int getPictureId() {
-        return pictureId;
-    }
+
 
     public void setId(String id) {
         this.id = id;
@@ -81,7 +91,4 @@ public class Contact {
         this.lastMassageSendingTime = lastMassageSendingTime;
     }
 
-    public void setPictureId(int pictureId) {
-        this.pictureId = pictureId;
-    }
 }

@@ -14,7 +14,7 @@ import com.google.firebase.iid.InstanceIdResult;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button showListButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +23,6 @@ public class MainActivity extends AppCompatActivity {
         AppDB db = Room.databaseBuilder(getApplicationContext(),
                 AppDB.class, "ContactsDB").build();
 
-        showListButton = findViewById(R.id.show_list_button);
-
-        showListButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), ContactsActivity.class);
-                intent.putExtra("loggedUserId", "bob123");
-                startActivity(intent);
-            }
-        });
         FirebaseInstanceId.getInstance().getInstanceId().addOnSuccessListener(MainActivity.this, new OnSuccessListener<InstanceIdResult>() {
             @Override
             public void onSuccess(InstanceIdResult instanceIdResult) {
@@ -42,5 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 System.out.println("!!!!!!");
             }
         });
+        Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+        startActivity(intent);
     }
 }

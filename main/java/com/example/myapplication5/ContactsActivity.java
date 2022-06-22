@@ -50,11 +50,6 @@ String loggedUserId;
         ContactDAO contactDao = db.contactDao();
         List<Contact> queryResult = contactDao.getAll();
         contactList.addAll(queryResult);
-        // Http get to get all contacts.
-/*
-        UpdateData();
-        UpdateList();
-*/
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -82,7 +77,7 @@ String loggedUserId;
     }
     private void UpdateData(){
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://10.0.2.2:5067")
+                .baseUrl("http://10.0.2.2:5208")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         ContactsAPI service = retrofit.create(ContactsAPI.class);
@@ -91,6 +86,9 @@ String loggedUserId;
             @Override
             public void onResponse(Call<ArrayList<Contact>> call, Response<ArrayList<Contact>> response) {
                 contactList = response.body();
+                for(int i=0;i<contactList.size();i++){
+
+                }
                 UpdateList();
             }
 
@@ -108,11 +106,14 @@ String loggedUserId;
       //  UpdateList();
 
     }
-    private void UpdateList() {
-
+    @Override
+    protected void onStop(){
+        super.onStop();
         db.contactDao().deleteTable();
         db.contactDao().vacuumDb(new SimpleSQLiteQuery("VACUUM"));
         db.contactDao().insertAll(contactList);
+    }
+    private void UpdateList() {
         adapter = new CustomListAdapter(getApplicationContext(), contactList);
         listView.setAdapter(adapter);
         listView.setClickable(true);

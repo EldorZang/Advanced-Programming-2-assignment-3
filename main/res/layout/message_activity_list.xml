@@ -6,19 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MessageActivity"
     android:background="@drawable/gradient_background">
-<RelativeLayout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/top_bar_image"
+
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/userdef"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+        <TextView
+            android:id="@+id/top_bar_user_name"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            tools:text="user1"
+            android:textSize="45sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
 
-    <ListView
-        android:id="@+id/list_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/send_bar"
-        tools:listitem="@layout/message_list_item" />
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/send_bar"
+            tools:listitem="@layout/message_list_item" />
 
     <RelativeLayout
         android:id="@+id/send_bar"
@@ -41,6 +82,7 @@
             android:textColorHint="@color/cool_light_green" />
 
         <Button
+            app:backgroundTint="@null"
             android:id="@+id/submit_form"
             android:layout_width="45dp"
             android:layout_height="45dp"
@@ -48,8 +90,8 @@
             android:layout_alignParentBottom="true"
 
             android:layout_toEndOf="@+id/message_form"
-            android:background="@drawable/send_icon"
-            />
+            android:background="@drawable/send_icon" />
     </RelativeLayout>
 </RelativeLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

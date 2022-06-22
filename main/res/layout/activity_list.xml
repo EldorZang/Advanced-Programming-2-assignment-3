@@ -6,29 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".ContactsActivity"
     android:background="@drawable/gradient_background">
-
-    <Button
-        android:id="@+id/add_contact_button"
-
-
-        android:layout_width="200sp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
 
 
-        android:background="@drawable/hollow_button"
-        android:text="Add New Contact"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+
+        <Button
+            android:id="@+id/add_contact_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+
+            android:background="@drawable/hollow_button"
+            android:text="Add A New Contact"
+            android:textAllCaps="false"
+            android:textColor="@color/cool_light_green"
+            android:textSize="20sp"
+            app:backgroundTint="@null"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <ListView
         android:id="@+id/list_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_contact_button"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar"
         tools:listitem="@layout/custom_list_item" />
 </androidx.constraintlayout.widget.ConstraintLayout>
