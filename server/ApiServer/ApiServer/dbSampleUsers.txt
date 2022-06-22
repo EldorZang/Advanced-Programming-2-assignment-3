@@ -1,5 +1,5 @@
 
-INSERT INTO users
+INSERT INTO Users
 (id,password,nickName)
 VALUES
 ("bob123","bob_pass","bob"),
@@ -7,16 +7,16 @@ VALUES
 ("oliver123","oliver_pass","Oliver"),
 ("olivia123","olivia_pass","Olivia");
 
-INSERT INTO contacts
+INSERT INTO Contacts
 (userId,contactId,name,server,last,lastdate) 
 VALUES
-("bob123","alice123","oliver","https://localhost:7208","oliverhi","olivertime"),
-("bob123","oliver123","oliver","https://localhost:7208","oliverhi","olivertime"),
-("bob123","olivia123","oliver","https://localhost:7208","oliverhi","olivertime"),
-("alice123","bob123","bob","https://localhost:7208","hi1","yesterday1"),
-("oliver123","bob123","bob","https://localhost:7208","hi1","yesterday1"),
-("olivia123","bob123","bob","https://localhost:7208","hi1","yesterday1");
-INSERT INTO messages
+("bob123","alice123","alice","https://localhost:7208","Enjoy your trip!","2022-06-16T04:39:24.9029448"),
+("bob123","oliver123","oliver","https://localhost:7208","Sounds great.","2022-06-16T04:39:24.9029448"),
+("bob123","olivia123","olivia","https://localhost:7208","Thanks.","2022-06-16T04:39:24.9029448"),
+("alice123","bob123","bob","https://localhost:7208","Enjoy your trip!","2022-06-16T04:39:24.9029448"),
+("oliver123","bob123","bob","https://localhost:7208","Sounds great.","2022-06-16T04:39:24.9029448"),
+("olivia123","bob123","bob","https://localhost:7208","Thanks.","2022-06-16T04:39:24.9029448");
+INSERT INTO Messages
 (user1Id,user2Id,msgId,content,created,sent)
 VALUES
 ("bob123","alice123",1,"How's France?","2022-06-16T04:39:24.9029448", true),

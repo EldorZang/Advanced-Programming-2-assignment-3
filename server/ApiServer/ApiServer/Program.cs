@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<IUsers1DBService, Users1DBService>();
+builder.Services.AddSingleton<IAndroidMessaging, AndroidMessaging >();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Allow All",
@@ -28,7 +29,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseCors("Allow All");
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseRouting();
 app.UseAuthorization();
