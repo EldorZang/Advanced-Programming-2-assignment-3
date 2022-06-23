@@ -21,7 +21,7 @@ This project is a messaging platform android app with a corresponding api server
 10. Update databse 
 
 **Api Server With BIU Server:** 
-In addition, the server (hopefully won't get down by admins by the time of checking) can be accesses with the address: https://a226-132-70-1-38.eu.ngrok.io/ 
+In addition, the server (hopefully won't get down by admins by the time of checking) can be accesses with the address: https://a226-132-70-1-38.eu.ngrok.io/  
 (https://a226-132-70-1-38.eu.ngrok.io/swagger/index.html for the swagger interface)
 
 
