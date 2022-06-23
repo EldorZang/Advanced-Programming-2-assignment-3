@@ -4,13 +4,6 @@ Eldor Zang, 315232942
 # Messaging Platform
 This project is a messaging platform android app with a corresponding api server.
 
-# Existing users:
-User Name | Nick Name | Password | Contacts
---- | --- | --- | --- |
-bob123 | Bob | bob_pass | alice123, oliver123, olivia123
-alice123 | Alice | alice_pass | bob123
-oliver123 | Oliver | oliver_pass | bob123
-olivia123 | Olivia | olivia_pass | bob123
 
 
 # Preparing all files
@@ -29,6 +22,17 @@ olivia123 | Olivia | olivia_pass | bob123
 12. Add a new migration.
 13. Update databse
 
+# Sample users (optinal): 
+In the API server folder there is a file named dbSampleUsers.txt.
+Executing this file's content in the database `db` (in MariaDB) will generate sample users and chats. 
+Please note that the server's addresses in the file lines 15-20) need to be changed for working messagaing. 
+User Name | Nick Name | Password | Contacts
+--- | --- | --- | --- |
+bob123 | Bob | bobpass | alice123, oliver123, olivia123
+alice123 | Alice | alicepass | bob123
+oliver123 | Oliver | oliverpass | bob123
+olivia123 | Olivia | oliviapass | bob123
+
 **Android App:**  
 1. Copy AndroidApp folder.
 2. Clean project. 
@@ -39,7 +43,7 @@ olivia123 | Olivia | olivia_pass | bob123
 `dotnet run`
 (Alternativly, it is more preffered to run with VS)
 3. Run android app (prefferably with Android Studio) 
-4. 
+
 # Notes
 1. Server needs to be updated via the settings menu.
 2. Users pictures will be displayed only for this device registered users (due to the unsupport of photos in the api).
