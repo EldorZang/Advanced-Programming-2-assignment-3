@@ -34,8 +34,8 @@ oliver123 | Oliver | oliverpass | bob123
 olivia123 | Olivia | oliviapass | bob123
 
 **Android App:**  
-1. Copy AndroidApp folder.
-2. Clean project. 
+1. Copy MyApplication5 folder.
+2. Clean project (In Android Studio: Build->Clean Project). 
 
 # Running
 1. Navigate to server folder.
