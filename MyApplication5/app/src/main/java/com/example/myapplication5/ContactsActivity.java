@@ -169,7 +169,7 @@ String loggedUserId;
     @Override
     protected void onDestroy(){
         super.onDestroy();
-        RemoveToken();
+     //   RemoveToken();
 
     }
     private void UpdateList() {
