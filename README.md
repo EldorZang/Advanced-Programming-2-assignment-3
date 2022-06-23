@@ -9,22 +9,20 @@ This project is a messaging platform android app with a corresponding api server
 # Preparing all files
 
 **Api Server:**  
-1. Create a project using the template ASP.NET CORE Web API and call it ApiServer.
-2. Delete WeatherForecast files from project folder and Controllers folder.
-4. Copy Models, Hubs, Controllers and Services folder from git to project's folder (overwrite new files).
-5. Copy program.cs file to project's folder.
-6. Check Api Server address **WITHOUT TRAILING SLASH** (usually something like https://localhost:7050) - easiest way is to run the server and check its address.
-7. Open ApiServer/Controller/apiController.cs and change line 20 with new Api server address.
-8. Install Microsoft.EntityFrameworkCore from NuGet (In VS:Tools->NuGet Package Manager->Mange NuGet packages for solution.
-9. Install Firebase Admin from NuGet (In VS:Tools->NuGet Package Manager->Mange NuGet packages for solution.
-10. Create Firebase project and retrieve json key file from: https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk
-11. Rename the key file key.json and copy it to project's folder (the folder with the file Program.cs).
-12. Add a new migration.
-13. Update databse
+1. Copy ApiServer Folder.
+2. Check Api Server address **WITHOUT TRAILING SLASH** (usually something like https://localhost:7050) - easiest way is to run the server and check its address.
+3. Update MariaDB connection string default is root with an empty password) in ApiServer/ApiServer/Context/UsersContext.cs: line 9.
+4. Open ApiServer/Controller/apiController.cs and change line 20 with new Api server address.
+5. Install Microsoft.EntityFrameworkCore from NuGet (In VS:Tools->NuGet Package Manager->Mange NuGet packages for solution.
+6. Install Firebase Admin from NuGet (In VS:Tools->NuGet Package Manager->Mange NuGet packages for solution.
+7. Create Firebase project and retrieve json key file from: https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk
+8. Rename the key file key.json and copy it to project's folder (the folder with the file Program.cs).
+9. Add a new migration.
+10. Update databse
 
 # Sample users (optional): 
 In the API server folder there is a file named dbSampleUsers.txt.
-Executing this file's content in the database `db` (in MariaDB) will generate sample users and chats. 
+Executing this file's content in the database named `db` (of MariaDB) will generate sample users and chats. 
 Please note that the server's addresses in the file lines 15-20) need to be changed for working messagaing. 
 User Name | Nick Name | Password | Contacts
 --- | --- | --- | --- |
