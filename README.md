@@ -45,7 +45,8 @@ olivia123 | Olivia | oliviapass | bob123
 3. Run android app (prefferably with Android Studio) 
 
 # Notes
-1. Server needs to be updated via the settings menu.
-2. Users pictures will be displayed only for this device registered users (due to the unsupport of photos in the api).
-3. In Google Chrome (in opposed to Firefox) forms aren't automatically out-focused when disabled buttons are clicked. Therefore using Google Chrome browser requires clicking the background (or any other not-focused element) before clicking the login button.
-4. The api implements some more neccessary http calls (such as register/login). Please do not manually send those new requests.
+1. Android app was tested with android 8.0 (API 26).
+2. Server needs to be updated via the settings menu.
+3. Users pictures will be displayed only for this device registered users (due to the unsupport of photos in the api).
+4. In Google Chrome (in opposed to Firefox) forms aren't automatically out-focused when disabled buttons are clicked. Therefore using Google Chrome browser requires clicking the background (or any other not-focused element) before clicking the login button.
+5. The api implements some more neccessary http calls (such as register/login). Please do not manually send those new requests.
