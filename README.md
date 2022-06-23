@@ -22,7 +22,7 @@ This project is a messaging platform android app with a corresponding api server
 12. Add a new migration.
 13. Update databse
 
-# Sample users (optinal): 
+# Sample users (optional): 
 In the API server folder there is a file named dbSampleUsers.txt.
 Executing this file's content in the database `db` (in MariaDB) will generate sample users and chats. 
 Please note that the server's addresses in the file lines 15-20) need to be changed for working messagaing. 
