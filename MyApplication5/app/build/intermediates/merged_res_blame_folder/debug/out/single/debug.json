@@ -16,10 +16,6 @@
         "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.myapplication5.app-merged_res-44:/layout_message_list_item.xml.flat",
-        "source": "com.example.myapplication5.app-main-46:/layout/message_list_item.xml"
-    },
-    {
         "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_blue.png.flat",
         "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/blue.png"
     },
@@ -76,6 +72,10 @@
         "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/green.png"
     },
     {
+        "merged": "com.example.myapplication5.app-merged_res-44:/layout_activity_list.xml.flat",
+        "source": "com.example.myapplication5.app-main-46:/layout/activity_list.xml"
+    },
+    {
         "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-v24_sent_message.png.flat",
         "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable-v24/sent_message.png"
     },
@@ -122,6 +122,10 @@
     {
         "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapplication5.app-merged_res-44:/layout_message_activity_list.xml.flat",
+        "source": "com.example.myapplication5.app-main-46:/layout/message_activity_list.xml"
     },
     {
         "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_message_list_item.xml.flat",

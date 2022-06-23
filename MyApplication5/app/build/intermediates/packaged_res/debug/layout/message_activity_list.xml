@@ -60,6 +60,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/send_bar"
+            android:transcriptMode="alwaysScroll"
+            android:stackFromBottom="true"
             tools:listitem="@layout/message_list_item" />
 
     <RelativeLayout
