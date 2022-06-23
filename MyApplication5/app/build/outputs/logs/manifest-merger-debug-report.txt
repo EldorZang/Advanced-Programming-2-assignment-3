@@ -1,0 +1,627 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+MERGED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/735ad9e5b42c680bfc95bf0fdc12b866/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/eldorz/.gradle/caches/transforms-3/430eb3af63a5f0fbc08eeb168e500f26/transformed/navigation-ui-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.6.1] /home/eldorz/.gradle/caches/transforms-3/03dd3706abcde30422a086049060b16d/transformed/material-1.6.1/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/eldorz/.gradle/caches/transforms-3/1e1678fd72044534548fedd85c1a2826/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.preference:preference:1.2.0] /home/eldorz/.gradle/caches/transforms-3/5a10c65022977334a72af5954316c153/transformed/preference-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.4.2] /home/eldorz/.gradle/caches/transforms-3/7f193599a503841f9d01bcab4f522c65/transformed/appcompat-1.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/eldorz/.gradle/caches/transforms-3/0a78e4b33d36d0821f808665747f3fc2/transformed/firebase-core-17.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/582b345400d33b6f706952509227245a/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/eldorz/.gradle/caches/transforms-3/1c83f9c9b885dbae9abd9cf16d2c4592/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/eldorz/.gradle/caches/transforms-3/eef820d914f55ba2dbd59c89ff4fa848/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1fffc8436a5925379acc96a37fdefb77/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/eldorz/.gradle/caches/transforms-3/f48e7f3942433f238a66c45022fa170e/transformed/firebase-analytics-17.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/eldorz/.gradle/caches/transforms-3/1e71bf1d98daad0a82e5cc459b278793/transformed/firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/eldorz/.gradle/caches/transforms-3/99fbad7495c8464827876257c4472b03/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/eldorz/.gradle/caches/transforms-3/cbf813fd923c29c7a632acce0c61d547/transformed/firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/eldorz/.gradle/caches/transforms-3/5e23089bf1c8fe83437c37e983c36754/transformed/play-services-measurement-sdk-17.2.1/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/eldorz/.gradle/caches/transforms-3/02ea7a43ef5020c0063da88ab2398c0b/transformed/play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/eldorz/.gradle/caches/transforms-3/4805ae480dee827047aa1827240eb98b/transformed/play-services-measurement-base-17.2.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/eldorz/.gradle/caches/transforms-3/13a03f22eb57aa97456aece7b5fb8ddc/transformed/play-services-ads-identifier-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/eldorz/.gradle/caches/transforms-3/a3f7c5595a9050e7579a8e2de2ca3916/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/eldorz/.gradle/caches/transforms-3/017177253a7d02c4c27ccf6b1608580f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.4.1] /home/eldorz/.gradle/caches/transforms-3/a3e91d31e122466322cd8fb3d443923e/transformed/fragment-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/9ae7b580e3a709f59c731190ec6b1a92/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/505e0c484d7c947ea696e9165e470f2b/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/eldorz/.gradle/caches/transforms-3/8fb7cc9b937a3087cc057edd134a087a/transformed/activity-ktx-1.2.3/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /home/eldorz/.gradle/caches/transforms-3/16b30ae6203a8abf5b7331ac72664533/transformed/activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /home/eldorz/.gradle/caches/transforms-3/6d8a13cbce7da06925fffcfe74f79d51/transformed/appcompat-resources-1.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/eldorz/.gradle/caches/transforms-3/18e0f56d3751529e9643fa6442940645/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/eldorz/.gradle/caches/transforms-3/bf6569bd10133bb777c20d8ef751e904/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/eldorz/.gradle/caches/transforms-3/1b0886322323920fa24aa4b00afe0046/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/eldorz/.gradle/caches/transforms-3/3c4fa5d44b03bfbe30328b29276954d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/eldorz/.gradle/caches/transforms-3/d064acb806b985a0b0465649c388e40a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/eldorz/.gradle/caches/transforms-3/a2208f33ddc702e1fea7f90417069b13/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/eldorz/.gradle/caches/transforms-3/7b29d0be26e7199997ad42f4ae525807/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/eldorz/.gradle/caches/transforms-3/7933e95242d8b9722072f6bc9087e7e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1c2a1403988f13830ad2045056182cb8/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/c52e32dcb7dbd6e003f39af9dd4b57da/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/07b427cc858092a93ba4221b8d8985ba/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/8e0c0eb2772d01349864a8fab63f50a8/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.4.1] /home/eldorz/.gradle/caches/transforms-3/4380cbba6ced587bd0ca250df97dfd47/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/123bd21ca4c2fd74ad1ec250e1dffa1a/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/eldorz/.gradle/caches/transforms-3/0364e46c6d1a1715c3dc52b3bb8fea89/transformed/navigation-common-2.4.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.2.0] /home/eldorz/.gradle/caches/transforms-3/6f072f721dea105c9c7bc9583c085cc0/transformed/core-ktx-1.2.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/eldorz/.gradle/caches/transforms-3/8b40d23d920f5e8a50d8bc0cd8df0156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/eldorz/.gradle/caches/transforms-3/043ec5fac2b7330e67b33e7d611ca168/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/eldorz/.gradle/caches/transforms-3/5153553c61da921ce882fb00721b7ebf/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/eldorz/.gradle/caches/transforms-3/26a55bf0aefd4b97c0af781000319176/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/6dc7714cd3b691a5f309587bdbacfce8/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/eldorz/.gradle/caches/transforms-3/b6bb2f0f14b600345616fe4e17b76f14/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /home/eldorz/.gradle/caches/transforms-3/4e0d5cf3ae886fd598246601ce89cfc0/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/eldorz/.gradle/caches/transforms-3/ce74cafb33981cd371e1323a41eea31c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/eldorz/.gradle/caches/transforms-3/a9fff037b8b2c2080a2412c2831a5b08/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/eldorz/.gradle/caches/transforms-3/68007f1a0113e6e8d1be5a07940dc952/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/7773724f4a36922a5d932764596f5093/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/eldorz/.gradle/caches/transforms-3/17a33619d1076a8222c02186bbcab046/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/511c2c4dd13cd4e8067464eb0901e31a/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/eldorz/.gradle/caches/transforms-3/ec603665e1e63f0b8022a255bd06c6ff/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/eldorz/.gradle/caches/transforms-3/0c311c9896c558a4348a0850a4596c82/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ccc9da0f5c36f55a2b399e1067f5da3/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ce4bfd71e396010827c12c4a82583e2/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/e7f3b091adea1c9279ffc124250824fc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/eldorz/.gradle/caches/transforms-3/c2df575d1dcb5df9d2d0d38ad7f1b52a/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/eldorz/.gradle/caches/transforms-3/40e78223009bfd03b46ab5c8f9da2956/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+	package
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:4:5-41
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:1-92:12
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:8:5-90:19
+MERGED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:24:5-29:19
+MERGED from [com.google.android.material:material:1.6.1] /home/eldorz/.gradle/caches/transforms-3/03dd3706abcde30422a086049060b16d/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.material:material:1.6.1] /home/eldorz/.gradle/caches/transforms-3/03dd3706abcde30422a086049060b16d/transformed/material-1.6.1/AndroidManifest.xml:24:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/eldorz/.gradle/caches/transforms-3/1e1678fd72044534548fedd85c1a2826/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/eldorz/.gradle/caches/transforms-3/1e1678fd72044534548fedd85c1a2826/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/eldorz/.gradle/caches/transforms-3/0a78e4b33d36d0821f808665747f3fc2/transformed/firebase-core-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/eldorz/.gradle/caches/transforms-3/0a78e4b33d36d0821f808665747f3fc2/transformed/firebase-core-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/eldorz/.gradle/caches/transforms-3/f48e7f3942433f238a66c45022fa170e/transformed/firebase-analytics-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/eldorz/.gradle/caches/transforms-3/f48e7f3942433f238a66c45022fa170e/transformed/firebase-analytics-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/eldorz/.gradle/caches/transforms-3/1e71bf1d98daad0a82e5cc459b278793/transformed/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/eldorz/.gradle/caches/transforms-3/1e71bf1d98daad0a82e5cc459b278793/transformed/firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/eldorz/.gradle/caches/transforms-3/99fbad7495c8464827876257c4472b03/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/eldorz/.gradle/caches/transforms-3/99fbad7495c8464827876257c4472b03/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/eldorz/.gradle/caches/transforms-3/cbf813fd923c29c7a632acce0c61d547/transformed/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/eldorz/.gradle/caches/transforms-3/cbf813fd923c29c7a632acce0c61d547/transformed/firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/eldorz/.gradle/caches/transforms-3/5e23089bf1c8fe83437c37e983c36754/transformed/play-services-measurement-sdk-17.2.1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/eldorz/.gradle/caches/transforms-3/5e23089bf1c8fe83437c37e983c36754/transformed/play-services-measurement-sdk-17.2.1/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/eldorz/.gradle/caches/transforms-3/02ea7a43ef5020c0063da88ab2398c0b/transformed/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/eldorz/.gradle/caches/transforms-3/02ea7a43ef5020c0063da88ab2398c0b/transformed/play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/eldorz/.gradle/caches/transforms-3/4805ae480dee827047aa1827240eb98b/transformed/play-services-measurement-base-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/eldorz/.gradle/caches/transforms-3/4805ae480dee827047aa1827240eb98b/transformed/play-services-measurement-base-17.2.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/eldorz/.gradle/caches/transforms-3/13a03f22eb57aa97456aece7b5fb8ddc/transformed/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/eldorz/.gradle/caches/transforms-3/13a03f22eb57aa97456aece7b5fb8ddc/transformed/play-services-ads-identifier-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/eldorz/.gradle/caches/transforms-3/ce74cafb33981cd371e1323a41eea31c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/eldorz/.gradle/caches/transforms-3/ce74cafb33981cd371e1323a41eea31c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:25:5-31:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:16:9-35
+	android:label
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:14:9-41
+	android:fullBackupContent
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:12:9-54
+	android:roundIcon
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:15:9-54
+	tools:targetApi
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:18:9-29
+	android:icon
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:10:9-36
+	android:theme
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:17:9-52
+	android:dataExtractionRules
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:11:9-65
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:9:9-63
+service#com.example.myapplication5.MyService
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:19:9-27:19
+	android:enabled
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:21:13-35
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:20:13-38
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:24:13-26:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:17-78
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:25-75
+activity#com.example.myapplication5.MainActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:28:9-36:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+action#android.intent.action.MAIN
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+activity#com.example.myapplication5.ContactsActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:37:9-45:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:38:13-45
+activity#com.example.myapplication5.UserActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:46:9-54:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:48:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:47:13-41
+activity#com.example.myapplication5.SettingsActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:55:11-59:63
+	android:parentActivityName
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:58:13-55
+	android:label
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:59:13-60
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:57:13-37
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:56:13-45
+activity#com.example.myapplication5.RegisterActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:60:9-62:40
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:62:13-37
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:61:13-45
+activity#com.example.myapplication5.AddContactActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:63:9-71:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:65:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:64:13-47
+activity#com.example.myapplication5.MessageActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:72:9-80:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:74:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:73:13-44
+activity#com.example.myapplication5.LoginActivity
+ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:81:9-89:20
+	android:exported
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:83:13-36
+	android:name
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:82:13-42
+uses-sdk
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+MERGED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/735ad9e5b42c680bfc95bf0fdc12b866/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/735ad9e5b42c680bfc95bf0fdc12b866/transformed/navigation-ui-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/eldorz/.gradle/caches/transforms-3/430eb3af63a5f0fbc08eeb168e500f26/transformed/navigation-ui-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.4.2] /home/eldorz/.gradle/caches/transforms-3/430eb3af63a5f0fbc08eeb168e500f26/transformed/navigation-ui-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.1] /home/eldorz/.gradle/caches/transforms-3/03dd3706abcde30422a086049060b16d/transformed/material-1.6.1/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.6.1] /home/eldorz/.gradle/caches/transforms-3/03dd3706abcde30422a086049060b16d/transformed/material-1.6.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/eldorz/.gradle/caches/transforms-3/1e1678fd72044534548fedd85c1a2826/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /home/eldorz/.gradle/caches/transforms-3/1e1678fd72044534548fedd85c1a2826/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.preference:preference:1.2.0] /home/eldorz/.gradle/caches/transforms-3/5a10c65022977334a72af5954316c153/transformed/preference-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.2.0] /home/eldorz/.gradle/caches/transforms-3/5a10c65022977334a72af5954316c153/transformed/preference-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.2] /home/eldorz/.gradle/caches/transforms-3/7f193599a503841f9d01bcab4f522c65/transformed/appcompat-1.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.2] /home/eldorz/.gradle/caches/transforms-3/7f193599a503841f9d01bcab4f522c65/transformed/appcompat-1.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/eldorz/.gradle/caches/transforms-3/0a78e4b33d36d0821f808665747f3fc2/transformed/firebase-core-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] /home/eldorz/.gradle/caches/transforms-3/0a78e4b33d36d0821f808665747f3fc2/transformed/firebase-core-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/582b345400d33b6f706952509227245a/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/582b345400d33b6f706952509227245a/transformed/navigation-fragment-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/eldorz/.gradle/caches/transforms-3/1c83f9c9b885dbae9abd9cf16d2c4592/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /home/eldorz/.gradle/caches/transforms-3/1c83f9c9b885dbae9abd9cf16d2c4592/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/eldorz/.gradle/caches/transforms-3/eef820d914f55ba2dbd59c89ff4fa848/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite:2.2.0] /home/eldorz/.gradle/caches/transforms-3/eef820d914f55ba2dbd59c89ff4fa848/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1fffc8436a5925379acc96a37fdefb77/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1fffc8436a5925379acc96a37fdefb77/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/eldorz/.gradle/caches/transforms-3/f48e7f3942433f238a66c45022fa170e/transformed/firebase-analytics-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] /home/eldorz/.gradle/caches/transforms-3/f48e7f3942433f238a66c45022fa170e/transformed/firebase-analytics-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/eldorz/.gradle/caches/transforms-3/1e71bf1d98daad0a82e5cc459b278793/transformed/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /home/eldorz/.gradle/caches/transforms-3/1e71bf1d98daad0a82e5cc459b278793/transformed/firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/eldorz/.gradle/caches/transforms-3/99fbad7495c8464827876257c4472b03/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/eldorz/.gradle/caches/transforms-3/99fbad7495c8464827876257c4472b03/transformed/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/eldorz/.gradle/caches/transforms-3/cbf813fd923c29c7a632acce0c61d547/transformed/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /home/eldorz/.gradle/caches/transforms-3/cbf813fd923c29c7a632acce0c61d547/transformed/firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/eldorz/.gradle/caches/transforms-3/5e23089bf1c8fe83437c37e983c36754/transformed/play-services-measurement-sdk-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] /home/eldorz/.gradle/caches/transforms-3/5e23089bf1c8fe83437c37e983c36754/transformed/play-services-measurement-sdk-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/eldorz/.gradle/caches/transforms-3/02ea7a43ef5020c0063da88ab2398c0b/transformed/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /home/eldorz/.gradle/caches/transforms-3/02ea7a43ef5020c0063da88ab2398c0b/transformed/play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/eldorz/.gradle/caches/transforms-3/4805ae480dee827047aa1827240eb98b/transformed/play-services-measurement-base-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] /home/eldorz/.gradle/caches/transforms-3/4805ae480dee827047aa1827240eb98b/transformed/play-services-measurement-base-17.2.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/eldorz/.gradle/caches/transforms-3/13a03f22eb57aa97456aece7b5fb8ddc/transformed/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] /home/eldorz/.gradle/caches/transforms-3/13a03f22eb57aa97456aece7b5fb8ddc/transformed/play-services-ads-identifier-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/eldorz/.gradle/caches/transforms-3/a3f7c5595a9050e7579a8e2de2ca3916/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.4.2] /home/eldorz/.gradle/caches/transforms-3/a3f7c5595a9050e7579a8e2de2ca3916/transformed/navigation-fragment-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/eldorz/.gradle/caches/transforms-3/017177253a7d02c4c27ccf6b1608580f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.4.1] /home/eldorz/.gradle/caches/transforms-3/017177253a7d02c4c27ccf6b1608580f/transformed/fragment-ktx-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] /home/eldorz/.gradle/caches/transforms-3/a3e91d31e122466322cd8fb3d443923e/transformed/fragment-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.4.1] /home/eldorz/.gradle/caches/transforms-3/a3e91d31e122466322cd8fb3d443923e/transformed/fragment-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/9ae7b580e3a709f59c731190ec6b1a92/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/9ae7b580e3a709f59c731190ec6b1a92/transformed/navigation-runtime-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/505e0c484d7c947ea696e9165e470f2b/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/505e0c484d7c947ea696e9165e470f2b/transformed/navigation-runtime-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/eldorz/.gradle/caches/transforms-3/8fb7cc9b937a3087cc057edd134a087a/transformed/activity-ktx-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.2.3] /home/eldorz/.gradle/caches/transforms-3/8fb7cc9b937a3087cc057edd134a087a/transformed/activity-ktx-1.2.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /home/eldorz/.gradle/caches/transforms-3/16b30ae6203a8abf5b7331ac72664533/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /home/eldorz/.gradle/caches/transforms-3/16b30ae6203a8abf5b7331ac72664533/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /home/eldorz/.gradle/caches/transforms-3/6d8a13cbce7da06925fffcfe74f79d51/transformed/appcompat-resources-1.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.2] /home/eldorz/.gradle/caches/transforms-3/6d8a13cbce7da06925fffcfe74f79d51/transformed/appcompat-resources-1.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/eldorz/.gradle/caches/transforms-3/18e0f56d3751529e9643fa6442940645/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] /home/eldorz/.gradle/caches/transforms-3/18e0f56d3751529e9643fa6442940645/transformed/emoji2-views-helper-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/eldorz/.gradle/caches/transforms-3/bf6569bd10133bb777c20d8ef751e904/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /home/eldorz/.gradle/caches/transforms-3/bf6569bd10133bb777c20d8ef751e904/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/eldorz/.gradle/caches/transforms-3/1b0886322323920fa24aa4b00afe0046/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /home/eldorz/.gradle/caches/transforms-3/1b0886322323920fa24aa4b00afe0046/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/eldorz/.gradle/caches/transforms-3/3c4fa5d44b03bfbe30328b29276954d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /home/eldorz/.gradle/caches/transforms-3/3c4fa5d44b03bfbe30328b29276954d5/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/eldorz/.gradle/caches/transforms-3/d064acb806b985a0b0465649c388e40a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/eldorz/.gradle/caches/transforms-3/d064acb806b985a0b0465649c388e40a/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/eldorz/.gradle/caches/transforms-3/a2208f33ddc702e1fea7f90417069b13/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/eldorz/.gradle/caches/transforms-3/a2208f33ddc702e1fea7f90417069b13/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/eldorz/.gradle/caches/transforms-3/7b29d0be26e7199997ad42f4ae525807/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /home/eldorz/.gradle/caches/transforms-3/7b29d0be26e7199997ad42f4ae525807/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/eldorz/.gradle/caches/transforms-3/7933e95242d8b9722072f6bc9087e7e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/eldorz/.gradle/caches/transforms-3/7933e95242d8b9722072f6bc9087e7e7/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1c2a1403988f13830ad2045056182cb8/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/eldorz/.gradle/caches/transforms-3/1c2a1403988f13830ad2045056182cb8/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/c52e32dcb7dbd6e003f39af9dd4b57da/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/c52e32dcb7dbd6e003f39af9dd4b57da/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/07b427cc858092a93ba4221b8d8985ba/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/07b427cc858092a93ba4221b8d8985ba/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/8e0c0eb2772d01349864a8fab63f50a8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] /home/eldorz/.gradle/caches/transforms-3/8e0c0eb2772d01349864a8fab63f50a8/transformed/customview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /home/eldorz/.gradle/caches/transforms-3/4380cbba6ced587bd0ca250df97dfd47/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.4.1] /home/eldorz/.gradle/caches/transforms-3/4380cbba6ced587bd0ca250df97dfd47/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/123bd21ca4c2fd74ad1ec250e1dffa1a/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.4.2] /home/eldorz/.gradle/caches/transforms-3/123bd21ca4c2fd74ad1ec250e1dffa1a/transformed/navigation-common-ktx-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/eldorz/.gradle/caches/transforms-3/0364e46c6d1a1715c3dc52b3bb8fea89/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.4.2] /home/eldorz/.gradle/caches/transforms-3/0364e46c6d1a1715c3dc52b3bb8fea89/transformed/navigation-common-2.4.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.2.0] /home/eldorz/.gradle/caches/transforms-3/6f072f721dea105c9c7bc9583c085cc0/transformed/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.2.0] /home/eldorz/.gradle/caches/transforms-3/6f072f721dea105c9c7bc9583c085cc0/transformed/core-ktx-1.2.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/eldorz/.gradle/caches/transforms-3/8b40d23d920f5e8a50d8bc0cd8df0156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/eldorz/.gradle/caches/transforms-3/8b40d23d920f5e8a50d8bc0cd8df0156/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/eldorz/.gradle/caches/transforms-3/043ec5fac2b7330e67b33e7d611ca168/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /home/eldorz/.gradle/caches/transforms-3/043ec5fac2b7330e67b33e7d611ca168/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/eldorz/.gradle/caches/transforms-3/5153553c61da921ce882fb00721b7ebf/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate-ktx:1.1.0] /home/eldorz/.gradle/caches/transforms-3/5153553c61da921ce882fb00721b7ebf/transformed/savedstate-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/eldorz/.gradle/caches/transforms-3/26a55bf0aefd4b97c0af781000319176/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /home/eldorz/.gradle/caches/transforms-3/26a55bf0aefd4b97c0af781000319176/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/6dc7714cd3b691a5f309587bdbacfce8/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/6dc7714cd3b691a5f309587bdbacfce8/transformed/lifecycle-viewmodel-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/eldorz/.gradle/caches/transforms-3/b6bb2f0f14b600345616fe4e17b76f14/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /home/eldorz/.gradle/caches/transforms-3/b6bb2f0f14b600345616fe4e17b76f14/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /home/eldorz/.gradle/caches/transforms-3/4e0d5cf3ae886fd598246601ce89cfc0/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /home/eldorz/.gradle/caches/transforms-3/4e0d5cf3ae886fd598246601ce89cfc0/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/eldorz/.gradle/caches/transforms-3/ce74cafb33981cd371e1323a41eea31c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/eldorz/.gradle/caches/transforms-3/ce74cafb33981cd371e1323a41eea31c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/eldorz/.gradle/caches/transforms-3/a9fff037b8b2c2080a2412c2831a5b08/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/eldorz/.gradle/caches/transforms-3/a9fff037b8b2c2080a2412c2831a5b08/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/eldorz/.gradle/caches/transforms-3/68007f1a0113e6e8d1be5a07940dc952/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/eldorz/.gradle/caches/transforms-3/68007f1a0113e6e8d1be5a07940dc952/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/7773724f4a36922a5d932764596f5093/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/7773724f4a36922a5d932764596f5093/transformed/lifecycle-livedata-core-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/eldorz/.gradle/caches/transforms-3/17a33619d1076a8222c02186bbcab046/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/eldorz/.gradle/caches/transforms-3/17a33619d1076a8222c02186bbcab046/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/511c2c4dd13cd4e8067464eb0901e31a/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.3.1] /home/eldorz/.gradle/caches/transforms-3/511c2c4dd13cd4e8067464eb0901e31a/transformed/lifecycle-runtime-ktx-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/eldorz/.gradle/caches/transforms-3/ec603665e1e63f0b8022a255bd06c6ff/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] /home/eldorz/.gradle/caches/transforms-3/ec603665e1e63f0b8022a255bd06c6ff/transformed/lifecycle-runtime-2.4.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/eldorz/.gradle/caches/transforms-3/0c311c9896c558a4348a0850a4596c82/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/eldorz/.gradle/caches/transforms-3/0c311c9896c558a4348a0850a4596c82/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ccc9da0f5c36f55a2b399e1067f5da3/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ccc9da0f5c36f55a2b399e1067f5da3/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ce4bfd71e396010827c12c4a82583e2/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/eldorz/.gradle/caches/transforms-3/9ce4bfd71e396010827c12c4a82583e2/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/e7f3b091adea1c9279ffc124250824fc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/eldorz/.gradle/caches/transforms-3/e7f3b091adea1c9279ffc124250824fc/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/eldorz/.gradle/caches/transforms-3/c2df575d1dcb5df9d2d0d38ad7f1b52a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/eldorz/.gradle/caches/transforms-3/c2df575d1dcb5df9d2d0d38ad7f1b52a/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/eldorz/.gradle/caches/transforms-3/40e78223009bfd03b46ab5c8f9da2956/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/eldorz/.gradle/caches/transforms-3/40e78223009bfd03b46ab5c8f9da2956/transformed/annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		ADDED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+		INJECTED from /home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:29:13-82
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/1362e3fdbda678d31ccb06b1ff784404/transformed/play-services-measurement-sdk-api-17.2.1/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:42:25-78
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] /home/eldorz/.gradle/caches/transforms-3/a060ab9cfddf5255f1b0b056e4968183/transformed/play-services-measurement-impl-17.2.1/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] /home/eldorz/.gradle/caches/transforms-3/71ff8692075a515a45fa836476de78f3/transformed/startup-runtime-1.0.0/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78

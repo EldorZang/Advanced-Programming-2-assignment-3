@@ -1,0 +1,198 @@
+[
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-v24_recv_message.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable-v24/recv_message.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_add_contact_button.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/add_contact_button.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.myapplication5.app-merged_res-44:/layout_message_list_item.xml.flat",
+        "source": "com.example.myapplication5.app-main-46:/layout/message_list_item.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_blue.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/blue.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/xml_backup_rules.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-v24_send_icon.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable-v24/send_icon.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_red.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/red.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_custom_list_item.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/custom_list_item.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_activity_list.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/activity_list.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_recv_message.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/recv_message.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_activity_register.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/activity_register.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_sent_message.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/sent_message.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_green.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/green.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-v24_sent_message.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable-v24/sent_message.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_activity_main.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_settings_activity.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/settings_activity.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/navigation_main_nav.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/navigation/main_nav.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_activity_login.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/activity_login.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/xml_root_preferences.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/xml/root_preferences.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_add_contact_activity.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/add_contact_activity.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_message_list_item.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/message_list_item.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_message_activity_list.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/message_activity_list.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_android_icon.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/android_icon.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_userdef.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/userdef.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_ic_baseline_settings_24.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/ic_baseline_settings_24.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_gold.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/gold.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_send_icon.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/send_icon.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_fragment_home.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-v24_settings_button.jpg.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable-v24/settings_button.jpg"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_hollow_button.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/hollow_button.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_lightblue.png.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/lightblue.png"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_gradient_background.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/gradient_background.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable_custom_button.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/drawable/custom_button.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/layout_activity_user.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-main-46:/layout/activity_user.xml"
+    },
+    {
+        "merged": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-merged_res-44:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/eldorz/.gradle/daemon/7.3.3/com.example.myapplication5.app-pngs-39:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    }
+]

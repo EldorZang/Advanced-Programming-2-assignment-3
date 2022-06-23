@@ -1,0 +1,358 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication5"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:6:5-67
+11-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:23:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+13-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:5-68
+13-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:24:22-65
+14    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+14-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:26:5-82
+14-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:26:22-79
+15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+15-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:26:5-110
+15-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:26:22-107
+16
+17    <application
+17-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:8:5-90:19
+18        android:name="com.example.myapplication5.MessagingApp"
+18-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:9:9-63
+19        android:allowBackup="false"
+19-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:10:9-36
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.7.0] /home/eldorz/.gradle/caches/transforms-3/3ed823632e800fb6f33746a43a77b5d9/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+21        android:dataExtractionRules="@xml/data_extraction_rules"
+21-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:11:9-65
+22        android:debuggable="true"
+23        android:fullBackupContent="@xml/backup_rules"
+23-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:12:9-54
+24        android:icon="@mipmap/ic_launcher"
+24-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:13:9-43
+25        android:label="@string/app_name"
+25-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:14:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:15:9-54
+27        android:supportsRtl="true"
+27-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:16:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.MyApplication5" >
+29-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:17:9-52
+30        <service
+30-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:19:9-27:19
+31            android:name="com.example.myapplication5.MyService"
+31-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:20:13-38
+32            android:enabled="true"
+32-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:21:13-35
+33            android:exported="true" >
+33-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:22:13-36
+34            <intent-filter>
+34-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:24:13-26:29
+35                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+35-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:17-78
+35-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:25-75
+36            </intent-filter>
+37        </service>
+38
+39        <activity
+39-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:28:9-36:20
+40            android:name="com.example.myapplication5.MainActivity"
+40-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:29:13-41
+41            android:exported="true" >
+41-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:30:13-36
+42            <intent-filter>
+42-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+43-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+45-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity
+48-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:37:9-45:20
+49            android:name="com.example.myapplication5.ContactsActivity"
+49-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:38:13-45
+50            android:exported="true" >
+50-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:39:13-36
+51            <intent-filter>
+51-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+52                <action android:name="android.intent.action.MAIN" />
+52-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+52-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+53
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+54-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+55            </intent-filter>
+56        </activity>
+57        <activity
+57-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:46:9-54:20
+58            android:name="com.example.myapplication5.UserActivity"
+58-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:47:13-41
+59            android:exported="true" >
+59-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:48:13-36
+60            <intent-filter>
+60-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+61-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+63-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+64            </intent-filter>
+65        </activity>
+66        <activity
+66-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:55:11-59:63
+67            android:name="com.example.myapplication5.SettingsActivity"
+67-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:56:13-45
+68            android:exported="false"
+68-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:57:13-37
+69            android:label="@string/title_activity_settings"
+69-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:59:13-60
+70            android:parentActivityName="com.example.myapplication5.MainActivity" />
+70-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:58:13-55
+71        <activity
+71-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:60:9-62:40
+72            android:name="com.example.myapplication5.RegisterActivity"
+72-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:61:13-45
+73            android:exported="false" />
+73-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:62:13-37
+74        <activity
+74-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:63:9-71:20
+75            android:name="com.example.myapplication5.AddContactActivity"
+75-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:64:13-47
+76            android:exported="true" >
+76-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:65:13-36
+77            <intent-filter>
+77-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+78-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+80-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+81            </intent-filter>
+82        </activity>
+83        <activity
+83-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:72:9-80:20
+84            android:name="com.example.myapplication5.MessageActivity"
+84-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:73:13-44
+85            android:exported="true" >
+85-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:74:13-36
+86            <intent-filter>
+86-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+87-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+89-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:81:9-89:20
+93            android:name="com.example.myapplication5.LoginActivity"
+93-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:82:13-42
+94            android:exported="true" >
+94-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:83:13-36
+95            <intent-filter>
+95-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:31:13-35:29
+96                <action android:name="android.intent.action.MAIN" />
+96-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:17-69
+96-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:32:25-66
+97
+98                <category android:name="android.intent.category.LAUNCHER" />
+98-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:17-77
+98-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:34:27-74
+99            </intent-filter>
+100        </activity>
+101
+102        <service
+102-->[androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:25:9-28:40
+103            android:name="androidx.room.MultiInstanceInvalidationService"
+103-->[androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:26:13-74
+104            android:directBootAware="true"
+104-->[androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:27:13-43
+105            android:exported="false" />
+105-->[androidx.room:room-runtime:2.4.2] /home/eldorz/.gradle/caches/transforms-3/f6508a8f02a9eeaf5216ab938fe5c445/transformed/room-runtime-2.4.2/AndroidManifest.xml:28:13-37
+106        <!--
+107             FirebaseMessagingService performs security checks at runtime,
+108             but set to not exported to explicitly avoid allowing another app to call it.
+109        -->
+110        <service
+110-->[com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:28:9-34:19
+111            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+111-->[com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:29:13-82
+112            android:exported="false" >
+112-->[com.google.firebase:firebase-messaging:20.0.0] /home/eldorz/.gradle/caches/transforms-3/ec89b8b83479c6a9f7d9c463e48c81a8/transformed/firebase-messaging-20.0.0/AndroidManifest.xml:30:13-37
+113            <intent-filter android:priority="-500" >
+113-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:24:13-26:29
+114                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+114-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:17-78
+114-->/home/eldorz/AndroidStudioProjects/MyApplication5/app/src/main/AndroidManifest.xml:25:25-75
+115            </intent-filter>
+116        </service>
+117        <service
+117-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:27:9-33:19
+118            android:name="com.google.firebase.components.ComponentDiscoveryService"
+118-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:28:13-84
+119            android:exported="false" >
+119-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:29:13-37
+120            <meta-data
+120-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:30:13-32:85
+121                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+121-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:31:17-139
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.android.gms:play-services-measurement-api:17.2.1] /home/eldorz/.gradle/caches/transforms-3/9fcdb231bff265516d0bc476c63ac3f0/transformed/play-services-measurement-api-17.2.1/AndroidManifest.xml:32:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:32:13-34:85
+124                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+124-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:33:17-96
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:34:17-82
+126        </service>
+127
+128        <receiver
+128-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:37:9-44:20
+129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+129-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:38:13-78
+130            android:exported="true"
+130-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:39:13-36
+131            android:permission="com.google.android.c2dm.permission.SEND" >
+131-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:40:13-73
+132            <intent-filter>
+132-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:41:13-43:29
+133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+133-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:42:17-81
+133-->[com.google.firebase:firebase-iid:20.0.0] /home/eldorz/.gradle/caches/transforms-3/9061a8c892236cde8b3f26d5e27da5d6/transformed/firebase-iid-20.0.0/AndroidManifest.xml:42:25-78
+134            </intent-filter>
+135        </receiver>
+136
+137        <provider
+137-->[com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:12:9-16:39
+138            android:name="com.google.firebase.provider.FirebaseInitProvider"
+138-->[com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:13:13-77
+139            android:authorities="com.example.myapplication5.firebaseinitprovider"
+139-->[com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:14:13-72
+140            android:exported="false"
+140-->[com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:15:13-37
+141            android:initOrder="100" />
+141-->[com.google.firebase:firebase-common:19.0.0] /home/eldorz/.gradle/caches/transforms-3/2dc32845fd8ce2b8bbef6f3b28206970/transformed/firebase-common-19.0.0/AndroidManifest.xml:16:13-36
+142
+143        <activity
+143-->[com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+144            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+144-->[com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+146-->[com.google.android.gms:play-services-base:17.0.0] /home/eldorz/.gradle/caches/transforms-3/9f4df8b3d980976209be311783dc21c1/transformed/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+147
+148        <receiver
+148-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:29:9-33:20
+149            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+149-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:30:13-85
+150            android:enabled="true"
+150-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:31:13-35
+151            android:exported="false" >
+151-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:32:13-37
+152        </receiver>
+153        <receiver
+153-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:34:9-42:20
+154            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+154-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:35:13-100
+155            android:enabled="true"
+155-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:36:13-35
+156            android:exported="true"
+156-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:37:13-36
+157            android:permission="android.permission.INSTALL_PACKAGES" >
+157-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:38:13-69
+158            <intent-filter>
+158-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:39:13-41:29
+159                <action android:name="com.android.vending.INSTALL_REFERRER" />
+159-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:40:17-79
+159-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:40:25-76
+160            </intent-filter>
+161        </receiver>
+162
+163        <service
+163-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:44:9-47:40
+164            android:name="com.google.android.gms.measurement.AppMeasurementService"
+164-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:45:13-84
+165            android:enabled="true"
+165-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:46:13-35
+166            android:exported="false" />
+166-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:47:13-37
+167        <service
+167-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:48:9-52:72
+168            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+168-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:49:13-87
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:50:13-35
+170            android:exported="false"
+170-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:51:13-37
+171            android:permission="android.permission.BIND_JOB_SERVICE" />
+171-->[com.google.android.gms:play-services-measurement:17.2.1] /home/eldorz/.gradle/caches/transforms-3/13dc8c1b7c70fcf61d326381bedf3a93/transformed/play-services-measurement-17.2.1/AndroidManifest.xml:52:13-69
+172
+173        <meta-data
+173-->[com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+174            android:name="com.google.android.gms.version"
+174-->[com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+175            android:value="@integer/google_play_services_version" />
+175-->[com.google.android.gms:play-services-basement:17.0.0] /home/eldorz/.gradle/caches/transforms-3/7a5a36a468fced7ef5ad41b2ff248488/transformed/play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+176
+177        <provider
+177-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
+178            android:name="androidx.startup.InitializationProvider"
+178-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:27:13-67
+179            android:authorities="com.example.myapplication5.androidx-startup"
+179-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:28:13-68
+180            android:exported="false" >
+180-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:29:13-37
+181            <meta-data
+181-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+182                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+182-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:32:17-75
+183                android:value="androidx.startup" />
+183-->[androidx.emoji2:emoji2:1.0.0] /home/eldorz/.gradle/caches/transforms-3/dcb3d749b4a9c2325d6780795f7482df/transformed/emoji2-1.0.0/AndroidManifest.xml:33:17-49
+184            <meta-data
+184-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+185                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+185-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+186                android:value="androidx.startup" />
+186-->[androidx.lifecycle:lifecycle-process:2.4.0] /home/eldorz/.gradle/caches/transforms-3/00768cf6e3cb6af62170a06a19573670/transformed/lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+187        </provider>
+188
+189        <uses-library
+189-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
+190            android:name="androidx.window.extensions"
+190-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:26:13-54
+191            android:required="false" />
+191-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:27:13-37
+192        <uses-library
+192-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:28:9-30:40
+193            android:name="androidx.window.sidecar"
+193-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:29:13-51
+194            android:required="false" />
+194-->[androidx.window:window:1.0.0] /home/eldorz/.gradle/caches/transforms-3/292ab4c636c3d7a6998b146b4d198ecf/transformed/window-1.0.0/AndroidManifest.xml:30:13-37
+195    </application>
+196
+197</manifest>
