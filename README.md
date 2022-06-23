@@ -20,12 +20,8 @@ This project is a messaging platform android app with a corresponding api server
 9. Add a new migration.
 10. Update databse 
 
-**Api Server With BIU Server:** 
-In addition, the server (hopefully won't get down by the time of checking) can be accesses with the address: https://a226-132-70-1-38.eu.ngrok.io/  
-(https://a226-132-70-1-38.eu.ngrok.io/swagger/index.html for the swagger interface)
 
-
-**Sample users (optional):** 
+**Sample users for local ApiServer (optional):** 
 In the API server folder there is a file named dbSampleUsers.txt.
 Executing this file's content in the database named `db` (of MariaDB) will generate sample users and chats. 
 Please note that the server's addresses in the file lines 15-20) need to be changed for working messagaing. 
@@ -35,6 +31,11 @@ bob123 | Bob | bobpass | alice123, oliver123, olivia123
 alice123 | Alice | alicepass | bob123
 oliver123 | Oliver | oliverpass | bob123
 olivia123 | Olivia | oliviapass | bob123
+
+
+**Api Server With BIU Server:** 
+In addition, the server (hopefully won't get down by the time of checking) can be accesses with the address: https://a226-132-70-1-38.eu.ngrok.io/  
+(https://a226-132-70-1-38.eu.ngrok.io/swagger/index.html for the swagger interface)  
 
 **Android App:**  
 1. Copy MyApplication5 folder.
