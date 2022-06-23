@@ -8,7 +8,7 @@ This project is a messaging platform android app with a corresponding api server
 
 # Preparing all files
 
-**Api Server:**  
+**Local Api Server:**  
 1. Copy ApiServer Folder.
 2. Check Api Server address **WITHOUT TRAILING SLASH** (usually something like https://localhost:7050) - easiest way is to run the server and check its address.
 3. Update MariaDB connection string default is root with an empty password) in ApiServer/ApiServer/Context/UsersContext.cs: line 9.
@@ -18,7 +18,12 @@ This project is a messaging platform android app with a corresponding api server
 7. Create Firebase project and retrieve json key file from: https://console.firebase.google.com/project/_/settings/serviceaccounts/adminsdk
 8. Rename the key file key.json and copy it to project's folder (the folder with the file Program.cs).
 9. Add a new migration.
-10. Update databse
+10. Update databse 
+
+**Api Server With BIU Server:** 
+In addition, the server (hopefully won't get down by admins by the time of checking) can be accesses with the address: https://a226-132-70-1-38.eu.ngrok.io/
+(https://a226-132-70-1-38.eu.ngrok.io/swagger/index.html for the swagger interface)
+
 
 # Sample users (optional): 
 In the API server folder there is a file named dbSampleUsers.txt.
