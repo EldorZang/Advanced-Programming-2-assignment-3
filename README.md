@@ -53,3 +53,4 @@ olivia123 | Olivia | oliviapass | bob123
 3. Users pictures will be displayed only for this device registered users (due to the unsupport of photos in the api).
 4. In Google Chrome (in opposed to Firefox) forms aren't automatically out-focused when disabled buttons are clicked. Therefore using Google Chrome browser requires clicking the background (or any other not-focused element) before clicking the login button.
 5. The api implements some more neccessary http calls (such as register/login). Please do not manually send those new requests.
+6. In the online BIU server, the users alice123 and bob123 already exists as testing users for development.
