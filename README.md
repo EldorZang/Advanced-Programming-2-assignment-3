@@ -25,7 +25,7 @@ In addition, the server (hopefully won't get down by admins by the time of check
 (https://a226-132-70-1-38.eu.ngrok.io/swagger/index.html for the swagger interface)
 
 
-# Sample users (optional): 
+**Sample users (optional):** 
 In the API server folder there is a file named dbSampleUsers.txt.
 Executing this file's content in the database named `db` (of MariaDB) will generate sample users and chats. 
 Please note that the server's addresses in the file lines 15-20) need to be changed for working messagaing. 
